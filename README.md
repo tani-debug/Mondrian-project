@@ -7,11 +7,16 @@ In this project, CSS Grid (and sometimes Flexbox) is used to layout the blocks i
 
 🔧 **Key Concepts Practiced:**
 CSS Grid (mainly) or Flexbox for layout
+
 grid-template-areas, grid-column, grid-row for positioning
+
 Box sizing, borders, and spacing
+
 Use of background colors and width/height controls
+
 Pixel-perfect design replication
+
 Mobile responsiveness (optional)
 
 Look at the project through:
-https://github.com/tani-debug/Mondrian-project
+https://tani-debug.github.io/Mondrian-project/
