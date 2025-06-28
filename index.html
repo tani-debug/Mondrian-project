@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .body{
+      height:100vh;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      height:500px;
+      width:500px;
+      background-color: #000;
+      display: grid;
+      grid-template-columns: 2fr 3fr 0.5fr;
+      grid-template-rows: 3fr 2fr 0.5fr;
+      gap: 5px;
+    }
+    .red{
+      background-color: #E72F24;
+      grid-column-start:1;
+    }
+
+    .white1{
+      background-color: #F0F1EC;
+      grid-area: 2/1;
+    }
+
+    .white2{
+      background-color: #F0F1EC;
+      grid-area: 1/2/2/5;
+    }
+
+    .white3{
+      background-color: #F0F1EC;
+      grid-area: 2/2;
+    }
+
+    .white4{
+      background-color: #F0F1EC;
+      grid-area: 3/1;
+    }
+
+    .white5{
+      grid-area: 2/3/4/5;
+      display: grid;
+      grid-template:40% 60%/ 100%;
+      gap:10px;
+
+    }
+    .white{
+      background-color: #F0F1EC;
+    }
+    .blue{
+      background-color: #004592;
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    .yb{
+      grid-area:3/2/4/3;
+      display: grid;
+      grid-template: 1fr/50% 50%;
+      gap:5px;
+    }
+    .yellow{
+      background-color: #F9D01E;
+    }
+    .black{
+      grid-area:1/2/2/2;
+      background-color: grey;
+    }
+
+
+  </style>
+</head>
+
+<body class="body">
+  <!-- Write your HTML here -->
+   <div class="container">
+    <div class="red"></div>
+    <div class="hgap"></div>
+    <div class="white1"></div>
+    <div class="white2"></div>
+    <div class="white3"></div>
+    <div class="white4"></div>
+    <div class="white5">
+      <div class="white"></div>
+      <div class="blue"></div>
+    </div>
+    <div class="yb">
+      <div class="yellow"></div>
+      <div class="black"></div>
+    </div>
+   </div>
+</body>
+
+</html>
